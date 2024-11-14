@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contacto.html">
+</head>
+
+<body>
+    <header
+        style="position: fixed; top: 0; left: 50%; transform: translateX(-50%); background-color: transparent; text-align: center; padding: 10px 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 100%;">
+        <h1 style="margin: 0; font-size: 2.5em; font-weight: bold;">EPICSHOP</h1>
+    </header>
+
+    <section style="padding-top: 80px;">
+        <div class="container-fluid">
+            <div class="row align-items-center py-3">
+                <div class="col-12">
+                    <nav class="navbar navbar-light">
+                        <div class="d-flex justify-content-between w-100">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <button id="verCarrito" class="btn btn-danger" data-bs-toggle="modal"
+                                data-bs-target="#modalCarrito">Ver Carrito (0)</button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="./ropa/images.jpeg" alt="Muñeco" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Muñeco Felíz</h5>
+                        <p class="card-text">Muñeco de peluche hecho a mano, suave y perfecto para abrazar.</p>
+                        <p class="text-success">$20.00</p>
+                        <button class="btn btn-success agregar" data-nombre="Muñeco Felíz" data-precio="20.00">Agregar
+                            al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="./ropa/otraimagen.jpeg" alt="Muñeco Alegre" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Muñeco Alegre</h5>
+                        <p class="card-text">Muñeco de algodón con colores vibrantes, ideal para niños.</p>
+                        <p class="text-success">$25.00</p>
+                        <button class="btn btn-success agregar" data-nombre="Muñeco Alegre" data-precio="25.00">Agregar
+                            al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="./ropa/otraimagenotra.jpeg" alt="Muñeco Tierno" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Muñeco Tierno</h5>
+                        <p class="card-text">Muñeco de peluche suave, con detalles bordados.</p>
+                        <p class="text-success">$15.00</p>
+                        <button class="btn btn-success agregar" data-nombre="Muñeco Tierno" data-precio="15.00">Agregar
+                            al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="./ropa/imagennueva.jpeg" alt="Muñeco Misterioso" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Muñeco Misterioso</h5>
+                        <p class="card-text">Muñeco único con estilo exclusivo, hecho a mano.</p>
+                        <p class="text-success">$30.00</p>
+                        <button class="btn btn-success agregar" data-nombre="Muñeco Misterioso"
+                            data-precio="30.00">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="./ropa/Ropa_urbana_de_moda.jpg" alt="Muñeco Misterioso" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Muñeco Misterioso</h5>
+                        <p class="card-text">Muñeco único con estilo exclusivo, hecho a mano.</p>
+                        <p class="text-success">$30.00</p>
+                        <button class="btn btn-success agregar" data-nombre="Muñeco Misterioso"
+                            data-precio="30.00">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="./ropa/bc2ef583b92e204d8dbcd65526bdfc82.jpg" alt="Muñeco Misterioso" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Muñeco Misterioso</h5>
+                        <p class="card-text">Muñeco único con estilo exclusivo, hecho a mano.</p>
+                        <p class="text-success">$30.00</p>
+                        <button class="btn btn-success agregar" data-nombre="Muñeco Misterioso"
+                            data-precio="30.00">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="./ropa/Ropa-Urbana-Hombre.jpg" alt="Muñeco Misterioso" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Muñeco Misterioso</h5>
+                        <p class="card-text">Muñeco único con estilo exclusivo, hecho a mano.</p>
+                        <p class="text-success">$30.00</p>
+                        <button class="btn btn-success agregar" data-nombre="Muñeco Misterioso"
+                            data-precio="30.00">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="./ropa/numero8.jpg" alt="Muñeco Misterioso" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Muñeco Misterioso</h5>
+                        <p class="card-text">Muñeco único con estilo exclusivo, hecho a mano.</p>
+                        <p class="text-success">$30.00</p>
+                        <button class="btn btn-success agregar" data-nombre="Muñeco Misterioso"
+                            data-precio="30.00">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Contacto: <a href="mailto:tienda@epicshop.com" class="text-white">tienda@epicshop.com</a></p>
+        <p>&copy; 2024 Tienda de Moda</p>
+    </footer>
+
+    <!-- Enlace a los scripts de Bootstrap y tu archivo de JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="tienda.html">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header
+        style="position: fixed; top: 0; left: 50%; transform: translateX(-50%); background-color: transparent; text-align: center; padding: 10px 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 100%;">
+        <h1 style="margin: 0; font-size: 2.5em; font-weight: bold;">EPICSHOP</h1>
+    </header>
+
+    <section style="padding-top: 80px;">
+        <div class="container-fluid">
+            <div class="row align-items-center py-3">
+                <div class="col-12">
+                    <nav class="navbar navbar-light">
+                        <div class="d-flex justify-content-between w-100">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+    
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="tienda.html">Tienda</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="text-align: center;">
+        <h2>Formulario de Registro</h2>
+        <form action="https://formspree.io/f/xnnqvoey" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="18" max="100">
+            <div>
+            <label for="genero">Género:</label><br>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label><br><br>
+        </div>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br>
+
+            <label for="aceptar">Aceptar Términos y Condiciones:</label>
+            <input type="checkbox" id="aceptar" name="aceptar" required><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Contacto: <a href="mailto:tienda@epicshop.com" class="text-white">tienda@epicshop.com</a></p>
+        <p>&copy; 2024 Tienda de Moda</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

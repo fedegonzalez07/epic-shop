@@ -1,0 +1,1 @@
+Es un proyecto en el cual hice una pagina web que tiene un carrito de compras, y trata la pagina de una tienda de ropa urbana.

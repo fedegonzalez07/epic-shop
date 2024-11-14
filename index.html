@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPICSHOP</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header
+        style="position: fixed; top: 0; left: 50%; transform: translateX(-50%); background-color: transparent; text-align: center; padding: 10px 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 100%;">
+        <h1 style="margin: 0; font-size: 2.5em; font-weight: bold;">EPICSHOP</h1>
+    </header>
+
+    <!-- Sección Principal (Hero Section) con Video -->
+    <section class="hero" style="position: relative; height: 100vh; color: white; text-align: center; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <!-- Video de fondo -->
+        <video autoplay loop muted style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+            <source src="video/MUSICA para PASARELAS de MODA 2022.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+
+        <!-- Contenido sobre el video -->
+        <div class="hero-content" style="position: relative; z-index: 2; color: white;">
+            <h2>Bienvenido a EPICSHOP</h2>
+            <p>Descubre la mejor moda para ti, con estilo, comodidad y a la vanguardia.</p>
+            <a href="tienda.html" class="btn btn-danger btn-lg mt-3">Explorar Tienda</a>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Productos Destacados</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="producto1.jpg" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 1</h5>
+                        <p class="card-text">Descripción breve del producto.</p>
+                        <a href="tienda.html" class="btn btn-danger">Ver Producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="producto2.jpg" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 2</h5>
+                        <p class="card-text">Descripción breve del producto.</p>
+                        <a href="tienda.html" class="btn btn-danger">Ver Producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="producto3.jpg" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 3</h5>
+                        <p class="card-text">Descripción breve del producto.</p>
+                        <a href="tienda.html" class="btn btn-danger">Ver Producto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Contacto: <a href="mailto:tienda@epicshop.com" class="text-white">tienda@epicshop.com</a></p>
+        <p>&copy; 2024 Tienda de Moda</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
