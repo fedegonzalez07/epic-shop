@@ -1,0 +1,243 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    background-color: #F9F2E7; 
+    color: #333;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+
+.titulo {
+    position: fixed; 
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: transparent; 
+    text-align: center; 
+    padding: 10px 0; 
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+}
+
+h1 {
+    margin: 0; 
+    font-size: 2.5em; 
+    font-weight: bold;
+}
+
+.presentacion-text {
+    position: relative; 
+    z-index: 2; 
+    color: white;
+}
+
+/* menu latelal  */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #FFB6C1;  
+    padding-top: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ff8da1;
+}
+
+.sidebar ul li button {
+    background-color: #ff5c8d;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li button:hover {
+    background-color: #ff367d;
+}
+
+.navbar {
+    background-color: #F9F2E7; 
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    color: #fff;
+}
+
+.navbar .btn {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Estilo de los productos y tarjetas */
+.tarjetas {
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+}
+
+.tarjetas:hover {
+    transform: translateY(-10px);
+}
+
+.tarjeta-img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+.tarjeta-body {
+    text-align: center;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu {
+    padding-top: 80px;
+}
+
+.video-bloque {
+    position: relative; 
+    height: 100vh; 
+    color: white; 
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+}
+
+.video-fondo {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    margin-top: auto;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #FFB6C1; 
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+header, footer, .navbar, .container-fluid, body {
+    background-color: white !important;  
+}
+
+form {
+    width: 30%;  
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #9e9999;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(114, 112, 112, 0.1);
+    margin-bottom: 30px; 
+}
+
+input[type="text"], input[type="email"], input[type="number"], textarea {
+    width: 100%; 
+    max-width: 400px; 
+    padding: 8px; 
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+textarea {
+    height: 100px;  
+}
+
+button[type="submit"] {
+    padding: 8px;  
+    border-radius: 5px;
+    border: none;
+    background-color: #FFB6C1; 
+    color: white;
+    font-size: 16px;  
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff8da1;
+}
+
+label {
+    font-weight: bold; 
+}
