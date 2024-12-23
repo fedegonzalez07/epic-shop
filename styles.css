@@ -1,11 +1,11 @@
+/* General */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
     height: 100%;
 }
 
@@ -13,34 +13,34 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Arial', sans-serif;
-    background-color: #F9F2E7;
+    background-color: #F9F2E7;  /* Fondo blanco/crema */
     color: #333;
     padding-bottom: 50px;
     min-height: 100vh;
 }
 
 .titulo {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: transparent;
-    text-align: center;
-    padding: 10px 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: transparent; 
+    text-align: center; 
+    padding: 10px 0; 
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     width: 100%;
 }
 
 h1 {
-    margin: 0;
-    font-size: 2.5em;
+    margin: 0; 
+    font-size: 2.5em; 
     font-weight: bold;
 }
 
 .presentacion-text {
-    position: relative;
-    z-index: 2;
+    position: relative; 
+    z-index: 2; 
     color: white;
 }
 
@@ -50,7 +50,7 @@ h1 {
     left: 0;
     height: 100%;
     width: 250px;
-    background-color: #FFB6C1;
+    background-color: #FFB6C1; 
     padding-top: 20px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -95,12 +95,13 @@ h1 {
 }
 
 .navbar {
-    background-color: #F9F2E7;
+    background-color: #F9F2E7; 
 }
 
 .navbar-brand {
     font-family: 'Dancing Script', cursive;
     font-size: 2em;
+    color: #fff;
 }
 
 .navbar .btn {
@@ -123,14 +124,14 @@ h1 {
 
 .tarjeta-img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 200px; 
+    object-fit: cover; 
     border-radius: 8px;
 }
 
 .tarjeta-body {
     text-align: center;
-    flex-grow: 1;
+    flex-grow: 1; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -141,22 +142,22 @@ h1 {
 }
 
 .video-bloque {
-    position: relative;
-    height: 100vh;
-    color: white;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative; 
+    height: 100vh; 
+    color: white; 
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     flex-direction: column;
 }
 
 .video-fondo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
     object-fit: contain;
 }
 
@@ -168,7 +169,7 @@ footer {
 }
 
 footer a {
-    color: #FFB6C1;
+    color: #FFB6C1;  
     text-decoration: none;
 }
 
@@ -176,51 +177,44 @@ footer a:hover {
     text-decoration: underline;
 }
 
-header,
-footer,
-.navbar,
-.container-fluid,
-body {
-    background-color: white !important;
+header, footer, .navbar, .container-fluid, body {
+    background-color: white !important;  
 }
 
 form {
-    width: 30%;
-    margin: 0 auto;
+    width: 30%;  
+    margin: 0 auto; 
     padding: 20px;
     background-color: #9e9999;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(114, 112, 112, 0.1);
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
 }
 
-input[type="text"],
-input[type="email"],
-input[type="number"],
-textarea {
-    width: 100%;
-    max-width: 400px;
-    padding: 8px;
+input[type="text"], input[type="email"], input[type="number"], textarea {
+    width: 100%; 
+    max-width: 400px; 
+    padding: 8px; 
     margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid #ddd;
-    font-size: 14px;
+    font-size: 14px; 
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 textarea {
-    height: 100px;
+    height: 100px;  
 }
 
 button[type="submit"] {
-    padding: 8px;
+    padding: 8px;  
     border-radius: 5px;
     border: none;
-    background-color: #FFB6C1;
+    background-color: #FFB6C1; 
     color: white;
-    font-size: 16px;
+    font-size: 16px; 
     cursor: pointer;
     transition: background-color 0.3s;
     display: block;
@@ -237,8 +231,8 @@ label {
 }
 
 .modal-dialog {
-    max-width: 500px;
-    margin: 30px auto;
+    max-width: 500px; 
+    margin: 30px auto; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -246,7 +240,16 @@ label {
 
 .modal-content {
     border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0)
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.modal-header {
+    background-color: #FFB6C1; 
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px;
+    text-align: center;
 }
 
 .modal-title {
@@ -265,7 +268,7 @@ label {
     padding: 20px;
     text-align: center;
     max-height: 400px;
-    overflow-y: auto;
+    overflow-y: auto;  
 }
 
 #carritoLista {
@@ -300,6 +303,21 @@ label {
 
 #vaciarCarrito:hover {
     background-color: #c82333;
+}
+
+#comprarCarrito {
+    background-color: #FF5C8D;  
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#comprarCarrito:hover {
+    background-color: #ff367d; 
 }
 
 .modal-footer {
