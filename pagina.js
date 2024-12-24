@@ -43,6 +43,8 @@ function eliminarDelCarrito(index) {
 
 document.getElementById('vaciarCarrito').addEventListener('click', () => {
     carrito = [];
+    document.getElementById('reseñaGeneral').value = ''; 
+    document.getElementById('correoUsuario').value = ''; 
     actualizarCarrito();
     mostrarCarrito();
 });
@@ -53,16 +55,31 @@ document.getElementById('modalCarrito').addEventListener('shown.bs.modal', () =>
 
 document.getElementById('comprarCarrito').addEventListener('click', () => {
     if (carrito.length > 0) {
-        console.log("¡Compra realizada con éxito!");
-        console.log("Productos comprados:");
+        let contenidoCarrito = "Detalles de la compra:\n\n";
+
         carrito.forEach(producto => {
-            console.log(`${producto.nombre} - $${producto.precio.toFixed(2)}`);
+            contenidoCarrito += `${producto.nombre} - $${producto.precio.toFixed(2)}\n`;
         });
 
+        const reseñaGeneral = document.getElementById('reseñaGeneral').value.trim();
+        if (reseñaGeneral) {
+            contenidoCarrito += `\nReseña: ${reseñaGeneral}`;
+        }
+
+        const correoUsuario = document.getElementById('correoUsuario').value.trim() || "correo@usuario.com";
+
+        console.log("Detalles de la compra:");
+        console.log("Correo del usuario: " + correoUsuario);
+        console.log(contenidoCarrito);
+
         carrito = [];
+        document.getElementById('reseñaGeneral').value = '';
+        document.getElementById('correoUsuario').value = ''; 
         actualizarCarrito();
         mostrarCarrito();
+
+        alert("Compra realizada con éxito. Revisa la consola para los detalles.");
     } else {
-        console.log("El carrito está vacío. No se puede realizar la compra.");
+        alert("Tu carrito está vacío. No puedes realizar la compra.");
     }
 });
