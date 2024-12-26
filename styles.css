@@ -1,4 +1,3 @@
-/* General */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Arial', sans-serif;
-    background-color: #F9F2E7;  /* Fondo blanco/crema */
+    background-color: #F9F2E7; 
     color: #333;
     padding-bottom: 50px;
     min-height: 100vh;
@@ -339,17 +338,82 @@ label {
     cursor: pointer;
 }
 
+.reseñas {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+}
+
+.reseñas h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.reseñas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.reseña-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.reseña-card:hover {
+    transform: translateY(-10px);
+}
+
+.reseña-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.reseña-card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.reseña-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.reseña-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.reseña-card .calificacion {
+    font-size: 1.2rem;
+    color: #ff5c8d;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .reseñas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 576px) {
-    .modal-dialog {
-        width: 90%;
+    .reseñas-grid {
+        grid-template-columns: 1fr;
     }
 
-    .modal-body {
-        padding: 10px;
-    }
-
-    .modal-footer {
-        flex-direction: column;
-        align-items: stretch;
+    .reseña-card img {
+        height: 150px;
     }
 }
